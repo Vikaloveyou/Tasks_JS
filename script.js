@@ -528,7 +528,75 @@ document.body.append($board15)
 let $br15 = document.createElement('br');
 document.body.append($br15);
 
+/* ------------------ 16 --------------------- */
 
+let $order_16 = document.createElement('span')
+$order_16.classList.add('order_16')
+document.body.append($order_16)
+$order_16.innerText = '16.'
 
+let $form16 = document.createElement('form')
+$form16.classList.add('exchange_form')
+document.body.append($form16)
+$form16.setAttribute('action', '#')
+$form16.setAttribute('method', 'post')
 
+let $field16 = document.createElement('input')
+$field16.classList.add('exchange_sum_field')
+$form16.appendChild($field16)
+$field16.setAttribute('type', 'text')
+$field16.setAttribute('placeholder', 'Введите сумму, USD')
 
+let $select16 = document.createElement('select')
+$select16.classList.add('currency_select')
+$form16.appendChild($select16)
+$select16.setAttribute('name', 'currency')
+document.querySelector('.currency_select').id = 'currency_select_id'
+
+let $optionEUR = document.createElement('option')
+$optionEUR.classList.add('option_eur')
+$select16.appendChild($optionEUR)
+$optionEUR.setAttribute('value', 'eur')
+$optionEUR.innerText = 'EUR'
+
+let $optionUAH = document.createElement('option')
+$optionUAH.classList.add('option_uah')
+$select16.appendChild($optionUAH)
+$optionUAH.setAttribute('value', 'uah')
+$optionUAH.innerText = 'UAH'
+
+let $optionAZN = document.createElement('option')
+$optionAZN.classList.add('option_azn')
+$select16.appendChild($optionAZN)
+$optionAZN.setAttribute('value', 'azn')
+$optionAZN.innerText = 'AZN'
+
+let convertCourse = () => {
+    const usd_eur = 0.92
+    const usd_uah = 26.66
+    const usd_azn = 1.7
+
+    let sumUSD = document.querySelector('.exchange_sum_field').value
+
+    let n = document.getElementById('currency_select_id').options.selectedIndex
+    if (n == 0) {
+        document.querySelector('.board16_field').innerText = 'Ваша сумма EUR: ' + (sumUSD * usd_eur).toFixed(2)
+    } else if (n == 1) {
+        document.querySelector('.board16_field').innerText = 'Ваша сумма UAH: ' + (sumUSD * usd_uah).toFixed(2)
+
+    } else if (n == 2) {
+        document.querySelector('.board16_field').innerText = 'Ваша сумма AZN: ' + (sumUSD * usd_azn).toFixed(2)
+    }
+}
+
+let $btn16 = document.createElement('button')
+document.body.append($btn16)
+$btn16.innerText = 'Перевести по курсу'
+$btn16.onclick = convertCourse
+
+let $board16 = document.createElement('div')
+$board16.classList.add('board16_field')
+document.body.append($board16)
+
+let $br16 = document.createElement('br')
+document.body.append($br16)
