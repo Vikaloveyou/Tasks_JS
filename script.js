@@ -14,7 +14,7 @@ $field1.setAttribute('placeholder', 'Ваше имя?')
 
 let getHello = () => {
     let name = document.querySelector('.name_field').value
-    document.querySelector('.board1_field').innerText = 'Здравствуйте! Вас зовут ' + name + ' :-)'
+    document.querySelector('.board1_field').innerText = 'Здравствуйте, ' + name + '! :-)'
 }
 
 let $btn1 = document.createElement('button')
