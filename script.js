@@ -581,7 +581,6 @@ let convertCourse = () => {
         document.querySelector('.board16_field').innerText = 'Ваша сумма EUR: ' + (sumUSD * usd_eur).toFixed(2)
     } else if (n == 1) {
         document.querySelector('.board16_field').innerText = 'Ваша сумма UAH: ' + (sumUSD * usd_uah).toFixed(2)
-
     } else if (n == 2) {
         document.querySelector('.board16_field').innerText = 'Ваша сумма AZN: ' + (sumUSD * usd_azn).toFixed(2)
     }
@@ -639,3 +638,51 @@ document.body.append($board17)
 
 let $br17 = document.createElement('br');
 document.body.append($br17);
+
+/* ------------------ 18 --------------------- */
+
+let $order_18 = document.createElement('span')
+$order_18.classList.add('order_18')
+document.body.append($order_18)
+$order_18.innerText = '18.'
+
+
+let checkSize = () => {
+    let lengthCircul = document.querySelector('.lengthCircul_field').value
+    let perimeterSquare = document.querySelector('.perimeterSquare_field').value
+
+    let circleDiameter = lengthCircul / Math.PI
+    let squareSide = perimeterSquare / 4
+
+    if (squareSide >= circleDiameter) {
+        document.querySelector('.board18_field').innerText = 'Круг поместится в квадрате!'
+    }
+    else {
+        document.querySelector('.board18_field').innerText = 'Круг не влезет, как ни крути... (('
+    }
+}
+
+let $field18_1 = document.createElement('input')
+$field18_1.classList.add('lengthCircul_field')
+document.body.append($field18_1)
+$field18_1.setAttribute('type', 'text')
+$field18_1.setAttribute('placeholder', 'Введите длину окружности')
+
+let $field18_2 = document.createElement('input')
+$field18_2.classList.add('perimeterSquare_field')
+document.body.append($field18_2)
+$field18_2.setAttribute('type', 'text')
+$field18_2.setAttribute('placeholder', 'Введите периметр квадрата')
+
+
+let $btn18 = document.createElement('button')
+document.body.append($btn18)
+$btn18.innerText = 'Влезет ли круг в квадрат?'
+$btn18.onclick = checkSize
+
+let $board18 = document.createElement('div')
+$board18.classList.add('board18_field')
+document.body.append($board18)
+
+let $br18 = document.createElement('br');
+document.body.append($br18);
