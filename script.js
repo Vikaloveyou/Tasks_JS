@@ -499,9 +499,7 @@ $order_15.innerText = '15.'
 
 let checkNumber5 = () => {
     let number5 = document.querySelector('.number5_field').value
-    console.log(number5)
     let number5Split = number5.split('')
-    console.log(number5Split)
 
     if (number5Split[0] == number5Split[4] && number5Split[1] == number5Split[3]) {
         document.querySelector('.board15_field').innerText = 'Это число - палиндром!'
@@ -600,3 +598,44 @@ document.body.append($board16)
 
 let $br16 = document.createElement('br')
 document.body.append($br16)
+
+/* ------------------ 17 --------------------- */
+
+let $order_17 = document.createElement('span')
+$order_17.classList.add('order_17')
+document.body.append($order_17)
+$order_17.innerText = '17.'
+
+
+let countDiscount = () => {
+    let sumPurchase = document.querySelector('.sumPurchase_field').value
+
+    if (sumPurchase <= 199) {
+        document.querySelector('.board17_field').innerText = 'Пока маловато для скидки...'
+    }
+    else if (sumPurchase >= 200 && sumPurchase <= 299) {
+        document.querySelector('.board17_field').innerText = 'Сумма к оплате со скидкой 3% составит: ' + (sumPurchase - (sumPurchase * 0.03)).toFixed(2)
+    } else if (sumPurchase >= 300 && sumPurchase <= 499) {
+        document.querySelector('.board17_field').innerText = 'Сумма к оплате со скидкой 5% составит: ' + (sumPurchase - (sumPurchase * 0.05)).toFixed(2)
+    } else if (sumPurchase >= 500) {
+        document.querySelector('.board17_field').innerText = 'Сумма к оплате со скидкой 7% составит: ' + (sumPurchase - (sumPurchase * 0.07)).toFixed(2)
+    }
+}
+
+let $field17 = document.createElement('input')
+$field17.classList.add('sumPurchase_field')
+document.body.append($field17)
+$field17.setAttribute('type', 'text')
+$field17.setAttribute('placeholder', 'Введите сумму покупки')
+
+let $btn17 = document.createElement('button')
+document.body.append($btn17)
+$btn17.innerText = 'Рассчитать сумму со скидкой'
+$btn17.onclick = countDiscount
+
+let $board17 = document.createElement('div')
+$board17.classList.add('board17_field')
+document.body.append($board17)
+
+let $br17 = document.createElement('br');
+document.body.append($br17);
