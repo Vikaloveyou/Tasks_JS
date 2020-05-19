@@ -686,3 +686,262 @@ document.body.append($board18)
 
 let $br18 = document.createElement('br');
 document.body.append($br18);
+
+/* ------------------ 19 --------------------- */
+
+let $order_19 = document.createElement('span')
+$order_19.classList.add('order_19')
+document.body.append($order_19)
+$order_19.innerText = '19.'
+
+
+// Вопрос №1
+
+let $form19 = document.createElement('form')
+$form19.classList.add('questions_form')
+$form19.setAttribute('action', '#')
+
+document.body.append($form19)
+
+let $question1 = document.createElement('p')
+$question1.classList.add('question1')
+$form19.appendChild($question1)
+
+let $h19_1 = document.createElement('h4')
+$question1.appendChild($h19_1)
+$h19_1.innerText = '1. Шмурдик боится как мышей, так и тараканов.'
+
+let $option19_1_1 = document.createElement('input')
+$option19_1_1.classList.add('question1-option1')
+$option19_1_1.setAttribute('type', 'radio')
+$option19_1_1.setAttribute('value', '1a')
+$option19_1_1.setAttribute('name', 'question1')
+$option19_1_1.id = 'question1-option1'
+$form19.appendChild($option19_1_1)
+
+let $label19_1_1 = document.createElement('label')
+$label19_1_1.classList.add('equestion1-label1')
+$label19_1_1.setAttribute('for', 'question1_option1')
+$label19_1_1.innerText = 'a) шмурдик не боится тараканов;'
+$form19.appendChild($label19_1_1)
+
+let $br19_1 = document.createElement('br');
+$form19.appendChild($br19_1);
+
+let $option19_1_2 = document.createElement('input')
+$option19_1_2.classList.add('question1-option2')
+$option19_1_2.setAttribute('type', 'radio')
+$option19_1_2.setAttribute('value', '1b')
+$option19_1_2.setAttribute('name', 'question1')
+$option19_1_2.id = 'question1-option2'
+$form19.appendChild($option19_1_2)
+
+let $label19_1_2 = document.createElement('label')
+$label19_1_2.classList.add('equestion1-label2')
+$label19_1_2.setAttribute('for', 'question1_option2')
+$label19_1_2.innerText = 'b) шмурдик боится мышей;'
+$form19.appendChild($label19_1_2)
+
+let $br19_2 = document.createElement('br');
+$form19.appendChild($br19_2);
+
+let $option19_1_3 = document.createElement('input')
+$option19_1_3.classList.add('question1-option3')
+$option19_1_3.setAttribute('type', 'radio')
+$option19_1_3.setAttribute('value', '1c')
+$option19_1_3.setAttribute('name', 'question1')
+$option19_1_3.id = 'question1-option3'
+$form19.appendChild($option19_1_3)
+
+let $label19_1_3 = document.createElement('label')
+$label19_1_3.classList.add('equestion1-label3')
+$label19_1_3.setAttribute('for', 'question1_option3')
+$label19_1_3.innerText = 'c) шмурдик боится мышей больше, чем тараканов, но и тараканов боится тоже.'
+$form19.appendChild($label19_1_3)
+
+// Вопрос №2
+
+let $question2 = document.createElement('p')
+$question2.classList.add('question2')
+$form19.appendChild($question2)
+
+let $h19_2 = document.createElement('h4')
+$question2.appendChild($h19_2)
+$h19_2.innerText = '2. Известно, что грымзик обязательно или полосат, или рогат, или то и другое вместе.'
+
+let $option19_2_1 = document.createElement('input')
+$option19_2_1.classList.add('question2-option1')
+$option19_2_1.setAttribute('type', 'radio')
+$option19_2_1.setAttribute('value', '2a')
+$option19_2_1.setAttribute('name', 'question2')
+$option19_2_1.id = 'question2-option1'
+$form19.appendChild($option19_2_1)
+
+let $label19_2_1 = document.createElement('label')
+$label19_2_1.classList.add('equestion2-label1')
+$label19_2_1.setAttribute('for', 'question2_option1')
+$label19_2_1.innerText = 'a) грымзик не может быть безрогим;'
+$form19.appendChild($label19_2_1)
+
+let $br19_3 = document.createElement('br');
+$form19.appendChild($br19_3);
+
+let $option19_2_2 = document.createElement('input')
+$option19_2_2.classList.add('question2-option2')
+$option19_2_2.setAttribute('type', 'radio')
+$option19_2_2.setAttribute('value', '2b')
+$option19_2_2.setAttribute('name', 'question2')
+$option19_2_2.id = 'question2-option2'
+$form19.appendChild($option19_2_2)
+
+let $label19_2_2 = document.createElement('label')
+$label19_2_2.classList.add('equestion2-label2')
+$label19_2_2.setAttribute('for', 'question2_option2')
+$label19_2_2.innerText = 'b) грымзик не может быть однотонным и безрогим одновременно;'
+$form19.appendChild($label19_2_2)
+
+let $br19_4 = document.createElement('br');
+$form19.appendChild($br19_4);
+
+let $option19_2_3 = document.createElement('input')
+$option19_2_3.classList.add('question2-option3')
+$option19_2_3.setAttribute('type', 'radio')
+$option19_2_3.setAttribute('value', '2c')
+$option19_2_3.setAttribute('name', 'question2')
+$option19_2_3.id = 'question2-option3'
+$form19.appendChild($option19_2_3)
+
+let $label19_2_3 = document.createElement('label')
+$label19_2_3.classList.add('equestion3-label3')
+$label19_2_3.setAttribute('for', 'question2_option3')
+$label19_2_3.innerText = 'c) грымзик не может быть полосатым и безрогим одновременно.'
+$form19.appendChild($label19_2_3)
+
+// Вопрос №3
+
+let $question3 = document.createElement('p')
+$question3.classList.add('question3')
+$form19.appendChild($question3)
+
+let $h19_3 = document.createElement('h4')
+$question3.appendChild($h19_3)
+$h19_3.innerText = '3. Если запырку отравить, то она сразу начнет пускать пузыри.'
+
+let $option19_3_1 = document.createElement('input')
+$option19_3_1.classList.add('question3-option1')
+$option19_3_1.setAttribute('type', 'radio')
+$option19_3_1.setAttribute('value', '3a')
+$option19_3_1.setAttribute('name', 'question3')
+$option19_3_1.id = 'question3-option1'
+$form19.appendChild($option19_3_1)
+
+let $label19_3_1 = document.createElement('label')
+$label19_3_1.classList.add('equestion3-label1')
+$label19_3_1.setAttribute('for', 'question3_option1')
+$label19_3_1.innerText = 'a) если запырка пускает пузыри, то она была отравлена;'
+$form19.appendChild($label19_3_1)
+
+let $br19_5 = document.createElement('br');
+$form19.appendChild($br19_5);
+
+let $option19_3_2 = document.createElement('input')
+$option19_3_2.classList.add('question3-option2')
+$option19_3_2.setAttribute('type', 'radio')
+$option19_3_2.setAttribute('value', '3b')
+$option19_3_2.setAttribute('name', 'question3')
+$option19_3_2.id = 'question3-option2'
+$form19.appendChild($option19_3_2)
+
+let $label19_3_2 = document.createElement('label')
+$label19_3_2.classList.add('equestion3-label2')
+$label19_3_2.setAttribute('for', 'question3_option2')
+$label19_3_2.innerText = 'b) если запырку не отравить, то она не будет пускать пузыри;'
+$form19.appendChild($label19_3_2)
+
+let $br19_6 = document.createElement('br');
+$form19.appendChild($br19_6);
+
+let $option19_3_3 = document.createElement('input')
+$option19_3_3.classList.add('question3-option3')
+$option19_3_3.setAttribute('type', 'radio')
+$option19_3_3.setAttribute('value', '3c')
+$option19_3_3.setAttribute('name', 'question3')
+$option19_3_3.id = 'question3-option3'
+$form19.appendChild($option19_3_3)
+
+let $label19_3_3 = document.createElement('label')
+$label19_3_3.classList.add('equestion3-label3')
+$label19_3_3.setAttribute('for', 'question3_option3')
+$label19_3_3.innerText = 'c) если запырка не пускает пузыри, то она не отравлена.'
+$form19.appendChild($label19_3_3)
+
+let $br19_7 = document.createElement('br');
+$form19.appendChild($br19_7);
+
+let getPoints = () => {
+
+    let getAnswer1 = () => {
+
+        let z = document.getElementsByName('question1')
+
+        for (let i = 0; i < z.length; i++) {
+
+            if (z[0].checked) {
+                return 0
+            } else if (z[1].checked) {
+                return 2
+            } else if (z[2].checked) {
+                return 0
+            }
+        }
+    }
+
+    let getAnswer2 = () => {
+
+        let x = document.getElementsByName('question2')
+
+        for (let i = 0; i < x.length; i++) {
+
+            if (x[0].checked) {
+                return 0
+            } else if (x[1].checked) {
+                return 2
+            } else if (z[2].checked) {
+                return 0
+            }
+        }
+    }
+
+    let getAnswer3 = () => {
+
+        let y = document.getElementsByName('question3')
+
+        for (let i = 0; i < y.length; i++) {
+
+            if (y[0].checked) {
+                return 0
+            } else if (y[1].checked) {
+                return 0
+            } else if (y[2].checked) {
+                return 2
+            }
+        }
+    }
+
+    document.querySelector('.board19_field').innerText = `Количество набранных баллов: ` + `${getAnswer1() + getAnswer2() + getAnswer3()}`
+}
+
+let $btn19 = document.createElement('button')
+$btn19.classList.add('btn_19')
+$btn19.setAttribute('type', 'button')
+$form19.appendChild($btn19)
+$btn19.innerText = 'Отправить'
+$btn19.onclick = getPoints
+
+let $br19_8 = document.createElement('br');
+document.body.appendChild($br19_8);
+
+let $board19 = document.createElement('div')
+$board19.classList.add('board19_field')
+document.body.append($board19)
+
